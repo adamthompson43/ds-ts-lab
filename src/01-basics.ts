@@ -15,6 +15,12 @@ interface Colleague {
     }
 }
 
+interface ColleagueHistory {
+  current: Colleague[],
+  former: Colleague[]
+}
+
+
 
 const friend1 = {
   name: "Paul Fleming",
