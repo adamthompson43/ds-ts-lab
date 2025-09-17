@@ -29,9 +29,9 @@ function addColleague(
   department: string,
   email: string
 ): void {
-  const maxExtension = cs.reduce((max, c) => Math.max(max, c.contact.extension), 0);
+  const maxExtension = cs.length > 0 ? highestExtension(cs).contact.extension : 100;
 
-    const newColleague: Colleague = {
+  const newColleague: Colleague = {
     name,
     department,
     contact: {
@@ -42,6 +42,7 @@ function addColleague(
 
   cs.push(newColleague);
 }
+
 
 addColleague(colleagues.current, "Sheild O Connell", "HR", "soc@here.com");
 console.log(colleagues.current.filter((c) => c.name === "Sheild O Connell"));
