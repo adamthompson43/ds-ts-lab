@@ -1,15 +1,17 @@
 import {Friend, Colleague, ColleagueHistory } from './myTypes'
 
 const friend1 = {
-  name: "Paul Fleming",
+  name: "Anna Shevsova",
   phone: "087-12345",
   age: 25,
+  dob: new Date("2005-11-22") ,
 };
 
 const friend2 = {
-  name: "Jane Costello",
+  name: "Shane Power",
   phone: "086--12345",
   age: 31,
+  interests: ['Smoking', 'Drinking']
 };
 
 export const friends = [friend1, friend2];
