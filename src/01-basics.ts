@@ -14,7 +14,13 @@ const friend2 = {
   interests: ['Smoking', 'Drinking']
 };
 
-export const friends = [friend1, friend2];
+const friend3 = {
+  name: "Ben O'Keeffe",
+  phone: "085-56789",
+  age: 29,
+}
+
+export const friends = [friend1, friend2, friend3];
 // console.log(friends[1]);
 
 //   -------------------
@@ -37,7 +43,7 @@ const colleague2 = {
 };
 
 const colleague3 = {
-  name: "Dean Sullivan",
+  name: "Ben O'Keeffe",
   department: "HR",
   contact: {
     email: "dos@company.com",
